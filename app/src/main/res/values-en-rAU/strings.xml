@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AndroidLaboratory</string>
+    <string name="app_name">Lab02</string>
     <string name="hello_message">G\'day mate!</string>
     <string name="ButtonText">Getcha button here</string>
+    <string name="Login">login</string>
+    <string name="LoginName">login name</string>
+    <string name="Password">password</string>
+    <string name="Checkbox">Checkbox</string>
+    <string name="Radio">Radio Button</string>
+    <string name="Switch"> What does this do  ?</string>
+    <string name="flag">flag</string>
 </resources>
