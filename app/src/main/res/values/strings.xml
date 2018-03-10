@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lab2</string>
+    <string name="app_name">Lab3</string>
     <string name="hello_message">Hello World!</string>
     <string name="ButtonText">I\'m a button</string>
     <string name="Login">login</string>
@@ -9,4 +9,10 @@
     <string name="Radio">Radio Button</string>
     <string name="Switch"> What does this do  ?</string>
     <string name="flag">flag</string>
+    <string name="LoginButton">Login Button</string>
+    <string name="dialog_message">1</string>
+    <string name="dialog_title">2</string>
+    <string name="ok">ok</string>
+    <string name="cancel">cancel</string>
+
 </resources>
