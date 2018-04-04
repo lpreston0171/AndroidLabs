@@ -93,22 +93,32 @@ public class ListItemsActivity extends AppCompatActivity {
                         } )
 
                         .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int id) {
+                                CharSequence text = "Continue activity";// "Continue activity"
+                                int duration = Toast.LENGTH_LONG; //= Toast.LENGTH_LONG if Off
 
-                            public void onClick(DialogInterface dialog, int id) {
-                                finish();
+                                Toast toast = Toast.makeText(ListItemsActivity.this , text, duration); //this is the ListActivity
+                                toast.show(); //display your message box
                             }
 
                         })
                         .show();
-
-
             }
         });
 
 
     }
 
-
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        if (requestCode == 50 && resultCode == RESULT_OK) {
+            Bundle extras = data.getExtras();
+            Bitmap imageBitmap = (Bitmap) extras.get("data");
+            ImageButton buttonD = (ImageButton)findViewById(R.id.imageButton);
+            buttonD.setImageBitmap(imageBitmap);
+        }
+    }
 
     protected void onResume(){
         super.onResume();
@@ -130,17 +140,8 @@ public class ListItemsActivity extends AppCompatActivity {
         Log.i(ACTIVITY_NAME, "In onStop()");
     }
 
-    protected void onDestroy(){
+    protected void onDestroy() {
         super.onDestroy();
         Log.i(ACTIVITY_NAME, "In onDestroy()");
-    }
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data){
-        if (requestCode == 50 && resultCode == RESULT_OK) {
-            Bundle extras = data.getExtras();
-            Bitmap imageBitmap = (Bitmap) extras.get("data");
-            ImageButton buttonD = (ImageButton)findViewById(R.id.imageButton);
-            buttonD.setImageBitmap(imageBitmap);
-        }
     }
 }

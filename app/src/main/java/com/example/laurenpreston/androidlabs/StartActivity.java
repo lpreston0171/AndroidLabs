@@ -14,22 +14,32 @@ public class StartActivity extends AppCompatActivity {
 
     protected static final String ACTIVITY_NAME = "StartActivity";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
         Log.i(ACTIVITY_NAME, "In onCreate()");
-
+        Button startChat = (Button)findViewById(R.id.startChatButton);
         Button button = (Button)findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener(){
 
+        button.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v){
                 Intent intent2 = new Intent(StartActivity.this, ListItemsActivity.class);
-                startActivityForResult(intent2, 50);
+                startActivity(intent2);
             }
+        });
 
+        startChat.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Log.i(ACTIVITY_NAME, "User clicked Start Chat");
+                Intent startChat = new Intent(StartActivity.this, ChatWindow.class);
+                startActivity(startChat);
+            }
         });
     }
 
@@ -40,8 +50,6 @@ public class StartActivity extends AppCompatActivity {
             Log.i(ACTIVITY_NAME, "Returned to Start Activity.onActivityResult");
         }
     }
-
-
 
     protected void onResume(){
         super.onResume();

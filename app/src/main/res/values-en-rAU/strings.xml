@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab03</string>
+    <string name="app_name">Lab04</string>
     <string name="hello_message">G\'day mate!</string>
     <string name="ButtonText">Getcha button here</string>
     <string name="Login">login</string>
@@ -11,8 +11,12 @@
     <string name="Switch"> What does this do  ?</string>
     <string name="flag">flag</string>
     <string name="LoginButton">Login Button</string>
-    <string name="dialog_message">1</string>
-    <string name="dialog_title">2</string>
+    <string name="dialog_message">Are you sure you want to finish the activity?</string>
+    <string name="dialog_title">Quit</string>
     <string name="ok">ok</string>
     <string name="cancel">cancel</string>
+    <string name="StartChat">Start Chat</string>
+    <string name="sendButton">send</string>
+    <string name="incomingImage">Incoming Image</string>
+    <string name="outgoingImage">Outgoing Image</string>
 </resources>

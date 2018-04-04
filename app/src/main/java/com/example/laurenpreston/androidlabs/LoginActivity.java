@@ -13,7 +13,7 @@ import android.widget.EditText;
 
 public class LoginActivity extends AppCompatActivity {
 
-    protected static final String ACTIVITY_NAME = "StartActivity";
+    protected static final String ACTIVITY_NAME = "LoginActivity";
     Button buttonLogin;
 
     @Override
@@ -42,7 +42,6 @@ public class LoginActivity extends AppCompatActivity {
                     startActivity(intent);
             }
         });
-
     }
 
     protected void onResume(){
