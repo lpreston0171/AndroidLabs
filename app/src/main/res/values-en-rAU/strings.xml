@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab04</string>
+    <string name="app_name">Lab06</string>
     <string name="hello_message">G\'day mate!</string>
     <string name="ButtonText">Getcha button here</string>
     <string name="Login">login</string>
